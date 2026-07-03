@@ -1,0 +1,48 @@
+source_addr = ["127.0.0.1:22754", "127.0.0.1:22756"]
+listen_addr = "127.0.0.1:22755"
+relayer_mnemonic = "word1 word2 word3 word4 word5 word6 word7 word8 word9 word10 word11 word12 word13 word14 word15 word16 word17 word18 word19 word20 word21 word22 word23 word24"
+relayer_memo = "Aero-Relay by @Kerim_mX"
+
+[[chains]]
+chain_id = "neutron-1"
+prefix = "neutron"
+denom = "untrn"
+lcd_url = "https://neutron-rest.publicnode.com"
+grpc_url = "http://127.0.0.1:22001"
+gas_price = 0.01
+gas_per_byte = 50
+gas_base = 30000
+gas_per_msg = 250000
+
+[[chains]]
+chain_id = "cosmoshub-4"
+prefix = "cosmos"
+denom = "uatom"
+lcd_url = "https://cosmos-rest.publicnode.com"
+grpc_url = "http://127.0.0.1:22002"
+gas_price = 0.005
+gas_per_byte = 50
+gas_base = 30000
+gas_per_msg = 250000
+
+[[chains]]
+chain_id = "osmosis-1"
+prefix = "osmo"
+denom = "uosmo"
+lcd_url = "https://osmosis-rest.publicnode.com"
+grpc_url = "http://127.0.0.1:22003"
+gas_price = 0.033
+gas_per_byte = 50
+gas_base = 30000
+gas_per_msg = 200000
+
+[[chains]]
+chain_id = "noble-1"
+prefix = "noble"
+denom = "uusdc"
+lcd_url = "https://noble-api.polkachu.com"
+grpc_url = "http://127.0.0.1:22004"
+gas_price = 0.11
+gas_per_byte = 50
+gas_base = 30000
+gas_per_msg = 200000

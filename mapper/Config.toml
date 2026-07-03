@@ -1,0 +1,18 @@
+source_addr = "127.0.0.1:22752" 
+listen_addr = "127.0.0.1:22753" 
+
+[[chains]]
+chain_id = "neutron"
+grpc_url = "http://127.0.0.1:22001"
+
+[[chains]]
+chain_id = "cosmos"
+grpc_url = "http://127.0.0.1:22002"
+
+[[chains]]
+chain_id = "osmo"
+grpc_url = "http://127.0.0.1:22003"
+
+[[chains]]
+chain_id = "noble"
+grpc_url = "http://127.0.0.1:22004"

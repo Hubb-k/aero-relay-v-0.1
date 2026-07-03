@@ -1,0 +1,35 @@
+[package]
+name = "mapper"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Основной рантайм и асинхронность
+tokio = { version = "1.40", features = ["full"] }
+
+# gRPC и Protobuf (твой старый рабочий стек)
+tonic = { version = "0.12", features = ["tls", "tls-roots", "gzip"] }
+prost = "0.13"
+
+# IBC-протоколы (с фичей client — обязательно!)
+ibc-proto = { version = "0.51", default-features = false, features = ["std", "client"] }
+
+# Сериализация конфига и событий
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.8"
+parking_lot = "0.12"
+# Логирование
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt"] }
+
+# Кэш и утилиты
+lru = "0.12"
+tempfile = "3.10"              # атомарная запись mapping.json
+anyhow = "1.0"                 # обработка ошибок
+futures-util = "0.3"           # полезно для async
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1

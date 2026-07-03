@@ -1,0 +1,27 @@
+[package]
+name = "updater"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Асинхронность и транспорт
+tokio = { version = "1", features = ["full"] }
+bytes = "1.6"
+futures = "0.3.30"
+
+# Твои совместимые версии для IBC и RPC
+tendermint     = "0.40.4"
+tendermint-rpc = { version = "0.40.4", features = ["http-client"] }
+ibc-proto      = { version = "0.52.0", features = ["std"] }
+
+# Сериализация
+prost      = "0.13"
+serde      = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml       = "0.8"
+base64 = "0.22"
+
+# Логи и ошибки
+anyhow = "1.0"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }

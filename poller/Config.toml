@@ -1,0 +1,21 @@
+source_addr = "127.0.0.1:22744"
+listen_addr = "127.0.0.1:22750"
+
+[[networks]]
+name = "cosmos"
+ws_url = "wss://cosmos-rpc.publicnode.com/websocket"
+
+
+[[networks]]
+name = "osmosis"
+ws_url = "wss://osmosis-rpc.publicnode.com:443/websocket"
+
+
+[[networks]]
+name = "noble"
+ws_url = "wss://noble-rpc.polkachu.com/websocket"
+
+
+[[networks]]
+name = "neutron"
+ws_url = "wss://rpc-neutron.keplr.app/websocket"

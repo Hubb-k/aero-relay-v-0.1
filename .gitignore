@@ -1,0 +1,29 @@
+# Rust / Cargo
+**/target/
+target/
+**/Cargo.lock
+Cargo.lock
+
+# Rust artifacts
+**/*.rs.bk
+*.pdb
+
+# Environment
+.env
+.env.*
+
+# Logs and data
+*.log
+logs/
+data/
+output/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

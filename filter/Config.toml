@@ -1,0 +1,4 @@
+source_addr = "127.0.0.1:22751"   
+listen_addr = "127.0.0.1:22752"   
+
+allowed_prefixes = ["osmo", "cosmos", "noble", "neutron"]

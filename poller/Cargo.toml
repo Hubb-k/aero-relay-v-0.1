@@ -1,0 +1,26 @@
+[package]
+name = "poller"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.41", features = ["full"] }               # 1.41.x — стабильная на 2026
+tokio-tungstenite = { version = "0.24", features = ["native-tls"] }                                     # последняя на момент написания
+tungstenite = "0.24"
+futures-util = "0.3.31"
+serde = { version = "1.0.215", features = ["derive"] }
+serde_json = "1.0.133"
+toml = "0.8.19"
+chrono = "0.4.38"
+anyhow = "1.0.89"
+
+# Если используешь atomic для BufferTask
+atomic = "0.6"     # или std::sync::atomic, если не нужна дополнительная crate
+
+# Опционально, если захочешь логирование получше
+tracing = { version = "0.1.40", optional = true }
+tracing-subscriber = { version = "0.3.18", optional = true, features = ["env-filter"] }
+
+[features]
+default = []
+tracing-log = ["dep:tracing", "dep:tracing-subscriber"]

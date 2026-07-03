@@ -1,0 +1,28 @@
+[package]
+name = "queryer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.40", features = ["full"] }
+tonic = { version = "0.12", features = ["tls", "tls-roots", "gzip"] }
+prost = "0.13"
+ibc-proto = { version = "0.51", default-features = false, features = ["std", "client"] }
+cosmos-sdk-proto = { version = "0.26", features = ["grpc"] }
+hex = "0.4"
+tendermint         = "0.40.4"
+tendermint-proto   = "0.40.4"
+tendermint-rpc     = { version = "0.40.4", features = ["http-client"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.8"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt"] }
+anyhow = "1.0"
+futures-util = "0.3"
+base64 = "0.22"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1

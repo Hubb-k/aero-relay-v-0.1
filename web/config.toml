@@ -1,0 +1,23 @@
+listen_interface = "127.0.0.1"
+
+[[chains]]
+prefix = "neutron"
+grpc_url = "http://neutron-grpc.polkachu.com:19190"
+listen_port = 22001
+
+[[chains]]
+prefix = "cosmos"
+grpc_url = "http://cosmos-grpc.polkachu.com:14990"
+listen_port = 22002
+
+[[chains]]
+prefix = "osmo"
+grpc_url = "http://osmosis-grpc.polkachu.com:12590"
+listen_port = 22003
+
+[[chains]]
+prefix = "noble"
+grpc_url = "http://noble-grpc.polkachu.com:21590"
+listen_port = 22004
+
+

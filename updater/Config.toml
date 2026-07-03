@@ -1,0 +1,26 @@
+source_addr = "127.0.0.1:22753" 
+listen_addr = "127.0.0.1:22756" 
+
+[[chains]]
+chain_id = "neutron"
+url = "https://neutron-rpc.publicnode.com"
+state_url = "https://neutron-rpc.publicnode.com"
+revision = "1"
+
+[[chains]]
+chain_id = "cosmos"
+url = "https://cosmos-rpc.polkachu.com"
+state_url = "https://cosmos-rpc.polkachu.com"
+revision = "4"
+
+[[chains]]
+chain_id = "osmo"
+url = "https://osmosis-rpc.polkachu.com"
+state_url = "https://osmosis-rpc.polkachu.com"
+revision = "1"
+
+[[chains]]
+chain_id = "noble"
+url = "http://127.0.0.1:8888"
+state_url = "https://noble-rpc.polkachu.com"
+revision = "1"

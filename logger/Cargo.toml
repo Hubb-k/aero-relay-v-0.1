@@ -1,0 +1,18 @@
+[package]
+name = "tcp-aggregator-logger"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Основной движок
+tokio = { version = "1.0", features = ["full"] }
+
+# Время для меток в логах
+chrono = { version = "0.4", features = ["serde"] }
+
+# Если конфиг лежит в JSON/TOML файле
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.9"
+# Для отлова Ctrl+C
+futures-util = "0.3"

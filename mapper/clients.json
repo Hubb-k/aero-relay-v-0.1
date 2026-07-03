@@ -1,0 +1,106 @@
+{
+  "map_cosmos_channel-1718_neutron_channel-7463": {
+    "client_a": [
+      "cosmos",
+      "07-tendermint-1119"
+    ],
+    "client_b": [
+      "neutron",
+      "07-tendermint-0"
+    ],
+    "channel_a": "channel-1718",
+    "channel_b": "channel-7463",
+    "last_updated": 1771972236
+  },
+  "map_neutron_channel-30_noble_channel-18": {
+    "client_a": [
+      "neutron",
+      "07-tendermint-40"
+    ],
+    "client_b": [
+      "noble",
+      "07-tendermint-25"
+    ],
+    "channel_a": "channel-30",
+    "channel_b": "channel-18",
+    "last_updated": 1771664077
+  },
+  "map_neutron_channel-10_osmo_channel-874": {
+    "client_a": [
+      "neutron",
+      "07-tendermint-19"
+    ],
+    "client_b": [
+      "osmo",
+      "07-tendermint-2823"
+    ],
+    "channel_a": "channel-10",
+    "channel_b": "channel-874",
+    "last_updated": 1771664397
+  },
+  "map_cosmos_channel-536_noble_channel-4": {
+    "client_a": [
+      "cosmos",
+      "07-tendermint-1116"
+    ],
+    "client_b": [
+      "noble",
+      "07-tendermint-4"
+    ],
+    "channel_a": "channel-536",
+    "channel_b": "channel-4",
+    "last_updated": 1771665365
+  },
+  "map_cosmos_channel-569_neutron_channel-1": {
+    "client_a": [
+      "cosmos",
+      "07-tendermint-1119"
+    ],
+    "client_b": [
+      "neutron",
+      "07-tendermint-0"
+    ],
+    "channel_a": "channel-569",
+    "channel_b": "channel-1",
+    "last_updated": 1771663900
+  },
+  "map_noble_channel-1_osmo_channel-750": {
+    "client_a": [
+      "noble",
+      "07-tendermint-0"
+    ],
+    "client_b": [
+      "osmo",
+      "07-tendermint-2704"
+    ],
+    "channel_a": "channel-1",
+    "channel_b": "channel-750",
+    "last_updated": 1771663490
+  },
+  "map_cosmos_channel-141_osmo_channel-0": {
+    "client_a": [
+      "cosmos",
+      "07-tendermint-259"
+    ],
+    "client_b": [
+      "osmo",
+      "07-tendermint-1"
+    ],
+    "channel_a": "channel-141",
+    "channel_b": "channel-0",
+    "last_updated": 1771663482
+  },
+  "map_cosmos_channel-0_osmo_channel-108456": {
+    "client_a": [
+      "cosmos",
+      ""
+    ],
+    "client_b": [
+      "osmo",
+      ""
+    ],
+    "channel_a": "channel-0",
+    "channel_b": "channel-108456",
+    "last_updated": 1771775504
+  }
+}
